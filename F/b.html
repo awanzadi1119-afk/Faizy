@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>🎉 Birthday Surprise</title>
+<link rel="stylesheet" href="b.css"/>
+</head>
+<body>
+
+<!-- 🎂 Login Screen -->
+<div class="login-screen" id="login-screen">
+  <h1>🎂 Enter Birthday Boy's Name</h1>
+  <input type="text" id="birthday-name" placeholder="Type name here...">
+  <button id="login-btn">Let's Celebrate 🎉</button>
+</div>
+
+
+<!-- 🎊 Main Birthday Page -->
+<div class="birthday-page hidden" id="birthday-page">
+  <!-- LED string -->
+  <div class="led-string">
+    <span class="led red"></span>
+    <span class="led yellow"></span>
+    <span class="led green"></span>
+    <span class="led blue"></span>
+    <span class="led pink"></span>
+    <span class="led purple"></span>
+  </div>
+
+  <h1 class="greeting">🎉 Happy Birthday <span id="name-display"></span> 🎉</h1>
+
+  <!-- 🎁 Surprise Buttons -->
+  <div class="surprises">
+    <button class="surprise-btn" data-target="wish1">🎁 Surprise 1</button>
+    <button class="surprise-btn" data-target="wish2">🎁 Surprise 2</button>
+    <button class="surprise-btn" data-target="wish3">🎁 Surprise 3</button>
+  </div>
+
+  <!-- 🔔 Wishes Boxes -->
+  <div class="wish-box hidden" id="wish1"><p>✨ Happy Birthday, my love!
+     May your day be as beautiful and radiant as your smile.
+     You mean the world to me, and I'm grateful for every moment we share. 🎂</p></div>
+  <div class="wish-box hidden" id="wish2"><p>🎉 Happy Birthday to the most wonderful man in my life!
+   Your presence brings me joy, and your love fills my heart.
+    Wishing you a day as special as you are 🥳</p></div>
+  <div class="wish-box hidden" id="wish3"><p>🎁 "Every day with you is a celebration of love, but today, on your birthday,
+     let's make it extra magical. Happy birthday, my beautiful Husband!"💖
+      <h2>Happy Birthday</h2></p></div>
+
+    <!-- 🎉 Mega Birthday Message Section -->
+<div class="mega-btn-section">
+  <button id="mega-btn">🌟 Special Birthday Message</button>
+</div>
+
+<!-- 🎬 Mega Message Modal -->
+<div id="mega-modal" class="overlay-modal">
+  <div class="modal-box mega-box">
+    <span class="close-modal" data-close="mega-modal">&times;</span>
+    <h2>💖 My Heartfelt Birthday Wishes 💖</h2>
+
+    <div class="mega-content">
+      <video src="music/2.mp4" loop autoplay playsinline></video>
+      <p>
+        Happy Birthday to the one who fills my world with happiness! 🌸  
+        You are not just the love of my life but the reason behind every smile I wear.  
+        On this special day, I wish you oceans of love, mountains of joy, and skies full of dreams.  
+        You deserve all the happiness in the world, my heart! 💕  
+        Let's make this birthday one to remember forever 🎂✨
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- 🥰 Sweet Memories -->
+  <div class="memories-btn-section">
+    <button id="memories-btn">💖 Our Sweet Memories</button>
+  </div>
+
+  <!-- 🖼️ Sweet Memories Modal -->
+  <div id="sweet-memories-modal" class="overlay-modal">
+    <div class="modal-box memories-box">
+      <span class="close-modal" data-close="sweet-memories-modal">&times;</span>
+      <h2>📸 Our Sweet Memories</h2>
+      <div class="memories-container">
+        <div class="memories-column">
+          <img src="Images/4.jpg" alt="Memory 1">
+          <img src="Images/2.jpg" alt="Memory 2">
+        </div>
+        <div class="memories-column">
+          <img src="Images/1.jpg" alt="Memory 4">
+          <img src="Images/5.jpg" alt="Memory 5">
+        </div>
+        <div class="memories-column">
+          <img src="Images/6.jpg" alt="Memory 6">
+          <img src="Images/7.jpg" alt="Memory 7">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 💌 Special Letters Section -->
+<div class="letter-btn-section">
+  <button id="letter-btn">💌 Open Special Letters</button>
+</div>
+
+<!-- 💌 Letters Modal -->
+<div id="letter-modal" class="overlay-modal">
+  <div class="modal-box letter-box">
+    <span class="close-modal" data-close="letter-modal">&times;</span>
+    <h2>💖 3 Special Surprises for You 💖</h2>
+
+    <div class="envelope-row">
+      
+      <!-- Left Envelope (GIF 1) -->
+      <div class="envelope-container">
+        <div class="envelope" id="envelope1">
+          <div class="flap"></div>
+          <div class="letter">
+            <video src="music/1.mp4"    loop></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Envelope (Text Message) -->
+      <div class="envelope-container">
+        <div class="envelope" id="envelope2">
+          <div class="flap"></div>
+          <div class="letter">
+            <video src="music/3.mp4"    loop></video>
+            <p id="msg-text">"I Know Im Irritated you Lot's But Can't Live Without Youu....🥺🌹💌 I Just Want To Youu To Know That you are Soo precious  To mee | Really miss you right now...🥰👑🌸our Relationship is Enough To Make Everyone Jelous...😁💕you gre My Crime partner, Telepathic Friend, Gossip Source, personal Life Coatch and soo much more.... 🥂🐼💘Thank youu For All The Beautiful memorirs That make me cryondd Laugh At The Same Time💗🦋</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Envelope (GIF 2) -->
+      <div class="envelope-container">
+        <div class="envelope" id="envelope3">
+          <div class="flap"></div>
+          <div class="letter">
+            <video src="music/4.mp4"    loop></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="envelope-hint">📨 Click each envelope for a surprise!</p>
+  </div>
+</div>
+
+
+  <!-- 🎶 Music Playlist -->
+  <audio id="birthday-music" src="music/birthday.mp3" ></audio>
+  <div class="music-controls">
+    <button id="prev-song">⏮️</button>
+    <button id="music-toggle">🔊 Play/Pause</button>
+    <button id="next-song">⏭️</button>
+  </div>
+
+  <!-- Cake -->
+  <img src="Images/cake.png" id="birthday-cake" alt="Birthday Cake">
+  <p>Click on cake for more magic!</p>
+
+  <!-- Cake Modal -->
+  <div id="cake-modal" class="overlay-modal">
+    <div class="modal-box">
+      <span class="close-modal" data-close="cake-modal">&times;</span>
+      <h2>🎉 Surprise! HAPPY BIRTHDAY MY DEAR HUSBAND! 🎂</h2>
+      <p>today is a special day for you and I want to let you know how much I appreciate your love. you have been there for me throughout all of life's ups and downs, and I'm so grateful to have a lover like you. On your special day I want to wish you a day of smiles, laughs, and love❤️</p>
+      <div class="cake-animation">
+        <video src="music/Birthday.mp4"    controls></video>
+        <video src="music/cake.mp4"    controls></video>
+        <video src="music/Celebration.mp4"    controls></video>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="b.js"></script>
+</body>
+</html>
